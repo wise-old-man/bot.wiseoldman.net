@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+  font-size: 16px;
+  font-family: 'Lato';
+  color: white;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Light.ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('/fonts/Lato/Lato-Black.ttf');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Squada One';
+  src: url('/fonts/SquadaOne/SquadaOne-Regular.ttf');
+}
