@@ -39,3 +39,13 @@ body {
   font-family: 'Squada One';
   src: url('/fonts/SquadaOne/SquadaOne-Regular.ttf');
 }
+
+button {
+  border: none;
+  background: none;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

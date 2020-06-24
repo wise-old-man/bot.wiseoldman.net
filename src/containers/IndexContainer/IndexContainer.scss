@@ -1,0 +1,109 @@
+.index-page__container {
+  .hero {
+    width: 100%;
+    height: 500px;
+    padding: 50px 0;
+
+    background-image: url('../../../static/hero_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    &__wrapper {
+      width: 1050px;
+      max-width: calc(100vw - 80px);
+      margin: auto;
+    }
+
+    &__text {
+      font-size: 1.2em;
+      font-weight: 700;
+      max-width: 340px;
+      margin-top: 30px;
+    }
+
+    &__actions {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 40px;
+      max-width: 330px;
+    }
+
+    &__discord {
+      position: absolute;
+      top: 80px;
+      right: 10vw;
+    }
+  }
+
+  .commands {
+    padding: 80px 0;
+
+    &__wrapper {
+      width: 1050px;
+      max-width: calc(100vw - 80px);
+      margin: auto;
+    }
+
+    &__title {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .hero__discord {
+    right: 2vw !important;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero__discord {
+    top: 150px;
+    right: 0 !important;
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .hero__discord {
+    top: 20vw !important;
+    right: -150px !important;
+    width: 60vw;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .hero__discord {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .index-page__container {
+    .hero {
+      &__brand {
+        max-width: 90%;
+      }
+
+      &__text {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+      }
+
+      &__actions {
+        flex-direction: column;
+
+        .btn {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
