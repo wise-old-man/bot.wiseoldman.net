@@ -11,33 +11,39 @@ const Command: React.FC<Props> = ({ command }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = useCallback(() => setIsOpen(!isOpen), [isOpen]);
 
+  const { baseCommand, title, requiresAdmin, examples, options } = command;
+  const shouldExpand = (examples && examples.length) || (options && options.length);
+
   return (
     <div className="command">
       <div className="command__header">
         <div>
-          <b>{command.baseCommand}</b>
-          <span>{command.title}</span>
+          <b>{baseCommand}</b>
+          {requiresAdmin && <span className="admin">Requires Admin.</span>}
+          <span>{title}</span>
         </div>
-        <button type="button" onClick={toggle}>
-          {isOpen ? 'Hide details' : 'Show details'}
-          <img src="arrow_icon.svg" />
-        </button>
+        {shouldExpand && (
+          <button type="button" onClick={toggle}>
+            {isOpen ? 'Hide details' : 'Show details'}
+            <img src="arrow_icon.svg" />
+          </button>
+        )}
       </div>
       <Expand open={isOpen} duration={150}>
         <div className="command__body">
-          {command.examples && (
+          {examples && (
             <div>
               <b>Examples</b>
-              {command.examples.map(ex => (
+              {examples.map(ex => (
                 <code>{ex}</code>
               ))}
             </div>
           )}
-          {command.options && (
+          {options && (
             <div>
               <b>Options</b>
               <ul>
-                {command.options.map(o => (
+                {options.map(o => (
                   <li>
                     <pre>{o.flag}</pre>
                     <span>{o.description}</span>

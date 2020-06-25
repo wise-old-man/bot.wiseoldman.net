@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`
+    title: `Discord Bot - Wise Old Man`,
+    description: `Track your Old School Runescape clan’s progress from your own Discord server. The Open Source Old School Runescape player progress tracker.`,
+    author: `Psikoi`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
