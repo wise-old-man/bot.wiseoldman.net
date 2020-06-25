@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Button from '../../components/Button';
 import Command from '../../components/Command';
 import commands from '../../config/commands';
@@ -8,6 +9,10 @@ import './IndexContainer.scss';
 function Index() {
   return (
     <div className="index-page__container">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Discord Bot - Wise Old Man</title>
+      </Helmet>
       <section className="hero">
         <div className="hero__wrapper">
           <img className="hero__brand" src="logo.png" alt="" />
