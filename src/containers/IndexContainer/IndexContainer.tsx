@@ -6,6 +6,10 @@ import commands from '../../config/commands';
 import '../../general.scss';
 import './IndexContainer.scss';
 
+const MAIN_WEBSITE_URL = 'https://wiseoldman.net';
+const INVITE_URL =
+  'https://discord.com/oauth2/authorize?client_id=719720369241718837&scope=bot&permissions=8192';
+
 function Index() {
   return (
     <div className="index-page__container">
@@ -20,11 +24,15 @@ function Index() {
             Track your Old School Runescape clan’s progress from your own Discord server.
           </p>
           <div className="hero__actions">
-            <Button>Go to Main Website</Button>
-            <Button primary>Add to Discord</Button>
+            <a href={MAIN_WEBSITE_URL}>
+              <Button>Go to Main Website</Button>
+            </a>
+            <a href={INVITE_URL}>
+              <Button primary>Add to Discord</Button>
+            </a>
           </div>
         </div>
-        <img className="hero__discord" src="discord_client.png" alt="" />
+        <img className="hero__discord" src="discord_client.gif" alt="" />
       </section>
       <section className="commands">
         <div className="commands__wrapper">

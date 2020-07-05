@@ -4,7 +4,7 @@
     height: 500px;
     padding: 50px 0;
 
-    background-image: url('../../../static/hero_bg.png');
+    background-image: url('../../../static/hero.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -38,6 +38,8 @@
       position: absolute;
       top: 80px;
       right: 10vw;
+      border-radius: 10px;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
     }
   }
 
