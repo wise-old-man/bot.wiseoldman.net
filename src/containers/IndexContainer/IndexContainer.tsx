@@ -7,7 +7,8 @@ import '../../general.scss';
 import './IndexContainer.scss';
 
 const MAIN_WEBSITE_URL = 'https://wiseoldman.net';
-const INVITE_URL = 'https://discord.com/oauth2/authorize?client_id=719720369241718837&scope=bot&permissions=8192';
+const INVITE_URL =
+  'https://discord.com/oauth2/authorize?client_id=719720369241718837&scope=bot&permissions=8192';
 
 function Index() {
   return (
@@ -31,7 +32,7 @@ function Index() {
             </a>
           </div>
         </div>
-        <img className="hero__discord" src="discord_client.png" alt="" />
+        <img className="hero__discord" src="discord_client.gif" alt="" />
       </section>
       <section className="commands">
         <div className="commands__wrapper">
