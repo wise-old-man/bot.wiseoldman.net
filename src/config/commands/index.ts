@@ -1,6 +1,7 @@
 import configChannel from './configs/channel';
 import configGroup from './configs/group';
 import configPrefix from './configs/prefix';
+import help from './general/help';
 import groupCompetition from './groups/competition';
 import groupCompetitions from './groups/competitions';
 import groupDetails from './groups/details';
@@ -16,6 +17,7 @@ import playerStats from './players/stats';
 import playerUpdate from './players/update';
 
 export default [
+  help,
   playerStats,
   playerBosses,
   playerActivities,

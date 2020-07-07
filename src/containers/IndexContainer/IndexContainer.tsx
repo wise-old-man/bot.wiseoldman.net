@@ -31,6 +31,12 @@ function Index() {
               <Button primary>Add to Discord</Button>
             </a>
           </div>
+          <div className="hero__contribute">
+            <a href="https://github.com/wise-old-man/discord-bot">
+              <span>Contribute on</span>
+              <b>Github</b>
+            </a>
+          </div>
         </div>
         <img className="hero__discord" src="discord_client.gif" alt="" />
       </section>

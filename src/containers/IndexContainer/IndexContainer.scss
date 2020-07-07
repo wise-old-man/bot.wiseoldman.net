@@ -34,6 +34,19 @@
       max-width: 330px;
     }
 
+    &__contribute {
+      color: gray;
+      font-size: 0.9em;
+      text-align: center;
+      margin-top: 25px;
+      max-width: 330px;
+      color: white;
+
+      b {
+        margin-left: 5px;
+      }
+    }
+
     &__discord {
       position: absolute;
       top: 80px;
