@@ -8,7 +8,7 @@ import './IndexContainer.scss';
 
 const MAIN_WEBSITE_URL = 'https://wiseoldman.net';
 const INVITE_URL =
-  'https://discord.com/oauth2/authorize?client_id=719720369241718837&scope=bot&permissions=8192';
+  'https://discord.com/oauth2/authorize?client_id=719720369241718837&scope=bot&permissions=57344';
 
 function Index() {
   return (
