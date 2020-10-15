@@ -16,11 +16,13 @@ import playerGained from './players/gained';
 import playerSetUsername from './players/setrsn';
 import playerStats from './players/stats';
 import playerUpdate from './players/update';
+import playerVirtuals from './players/virtuals';
 
 export default [
   help,
   playerSetUsername,
   playerStats,
+  playerVirtuals,
   playerBosses,
   playerActivities,
   playerAchievements,

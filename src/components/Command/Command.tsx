@@ -11,8 +11,10 @@ const Command: React.FC<Props> = ({ command }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = useCallback(() => setIsOpen(!isOpen), [isOpen]);
 
-  const { baseCommand, title, requiresAdmin, examples, options } = command;
-  const shouldExpand = (examples && examples.length) || (options && options.length);
+  const { baseCommand, title, requiresAdmin, examples, options, alternatives } = command;
+  const shouldExpand = (examples && examples.length) ||
+    (options && options.length) ||
+    (alternatives && alternatives.length);
 
   return (
     <div className="command">
@@ -47,6 +49,18 @@ const Command: React.FC<Props> = ({ command }) => {
                   <li>
                     <pre>{o.flag}</pre>
                     <span>{o.description}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+          {alternatives && (
+            <div>
+              <b>Alternatives</b>
+              <ul>
+                {alternatives.map(o => (
+                  <li>
+                    <pre>{o.command}</pre>
                   </li>
                 ))}
               </ul>
