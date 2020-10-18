@@ -22,7 +22,8 @@ export default {
     '!stats Iron Mammal --ranks',
     '!stats Cometz --rank',
     '!stats Jakesterwars --ehp',
-    '!stats Mmorpg --hours'
+    '!stats Mmorpg --hours',
+    '!ehp USBC'
   ],
   alternatives: [
     {

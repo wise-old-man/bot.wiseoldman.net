@@ -16,7 +16,8 @@ export default {
     '!bosses Psikoi --ranks',
     '!bosses Cometz --rank',
     '!bosses Jakesterwars --ehb',
-    '!bosses Hey Jase --hours'
+    '!bosses Hey Jase --hours',
+    '!ehb USBC'
   ],
   alternatives: [
     {
