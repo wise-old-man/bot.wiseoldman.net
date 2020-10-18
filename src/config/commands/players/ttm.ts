@@ -1,7 +1,7 @@
 
 export default {
   title: 'Shows player virtual stats',
-  baseCommand: '!virtuals {username}',
+  baseCommand: '!ttm {username}',
   examples: [
     '!virtuals Zezima', 
     '!ttm Psikoi', 
@@ -10,7 +10,7 @@ export default {
   ],
   alternatives : [
       {
-          command: '!ttm {username} / !ehp {username} / !ehb {username}',
+          command: '!max {username}',
       },
   ]
 };

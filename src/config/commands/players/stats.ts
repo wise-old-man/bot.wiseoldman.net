@@ -23,5 +23,11 @@ export default {
     '!stats Cometz --rank',
     '!stats Jakesterwars --ehp',
     '!stats Mmorpg --hours'
+  ],
+  alternatives: [
+    {
+      command: '!ehp {username}',
+      description: 'Alternative to !stats {username} --ehp'
+    }
   ]
 };

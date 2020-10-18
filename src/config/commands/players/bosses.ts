@@ -17,5 +17,11 @@ export default {
     '!bosses Cometz --rank',
     '!bosses Jakesterwars --ehb',
     '!bosses Hey Jase --hours'
+  ],
+  alternatives: [
+    {
+      command: '!ehb {username}',
+      description: 'Alternative to !bosses {username} --ehb'
+    }
   ]
 };

@@ -61,6 +61,7 @@ const Command: React.FC<Props> = ({ command }) => {
                 {alternatives.map(o => (
                   <li>
                     <pre>{o.command}</pre>
+                    <span>{o.description}</span>
                   </li>
                 ))}
               </ul>

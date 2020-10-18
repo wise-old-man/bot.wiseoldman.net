@@ -5,6 +5,7 @@ interface CommandOption {
 
 interface AlternativeOption {
   command: string;
+  description: string;
 }
 
 export interface CommandConfig {
