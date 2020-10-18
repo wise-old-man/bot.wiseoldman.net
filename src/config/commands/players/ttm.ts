@@ -1,6 +1,6 @@
 
 export default {
-  title: 'Shows player virtual stats',
+  title: 'Shows player efficiency stats',
   baseCommand: '!ttm {username}',
   examples: [
     '!ttm Psikoi', 
