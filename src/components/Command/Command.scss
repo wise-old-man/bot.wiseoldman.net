@@ -57,7 +57,7 @@
     flex-direction: row;
 
     > div {
-      &:nth-child(2) {
+      &:nth-child(1n+2) {
         margin-left: 30px;
       }
 
@@ -91,7 +91,6 @@
 
           > span {
             font-size: 0.8em;
-            margin-left: 20px;
             color: #b0b0b0;
           }
         }
