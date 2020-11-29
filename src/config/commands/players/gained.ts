@@ -3,9 +3,9 @@ export default {
   baseCommand: '!gained {username}',
   options: [
     {
-      flag: '--day / --week / --month / --year',
+      flag: '--6h / --day / --week / --month / --year',
       description: 'Defines the time period for the player gains.'
     }
   ],
-  examples: ['!gained Zezima', '!gained Psikoi --month', '!gained Cometz --day'],
+  examples: ['!gained Zezima', '!gained Psikoi --month', '!gained Cometz --day']
 };
