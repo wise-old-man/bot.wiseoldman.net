@@ -3,7 +3,7 @@ export default {
   baseCommand: '!group records {metric}',
   options: [
     {
-      flag: '--day / --week / --month / --year',
+      flag: '--6h / --day / --week / --month / --year',
       description: 'Defines the time period for the group records.'
     }
   ],
