@@ -3,17 +3,14 @@ name: Build Docker Image
 on:
   push:
     branches: [master]
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
       - name: Login to Docker Hub
         run: docker login -u ${{ secrets.ORG_DOCKER_USERNAME }} -p ${{ secrets.ORG_DOCKER_PASSWORD }}
-
       - name: Build & Push the Docker image
         run: |
           docker build . --file Dockerfile --tag wiseoldman/bot-website:latest
@@ -32,5 +29,5 @@ jobs:
           script: |
             cd wise-old-man
             docker image rm wiseoldman/bot-website
-            docker-compose pull
-            docker-compose up --build -d
+            docker-compose pull nginx
+            docker-compose restart nginx
