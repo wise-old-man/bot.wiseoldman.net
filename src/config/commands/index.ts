@@ -1,3 +1,4 @@
+import configDefaultChannel from './configs/defaultChannel';
 import configChannel from './configs/channel';
 import configGroup from './configs/group';
 import configPrefix from './configs/prefix';
@@ -36,6 +37,7 @@ export default [
   groupRecords,
   groupMembers,
   configGroup,
-  configChannel,
-  configPrefix
+  configPrefix,
+  configDefaultChannel,
+  configChannel
 ];
