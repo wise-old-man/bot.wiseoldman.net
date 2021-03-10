@@ -40,6 +40,18 @@ function Index() {
         </div>
         <img className="hero__discord" src="discord_client.gif" alt="" />
       </section>
+      <section>
+        <div className="help-warning">
+          <span>Is the bot not responding?</span>
+          <p>
+            Check out
+            <a href="https://github.com/wise-old-man/wise-old-man/wiki/User-Guide:-How-To-Configure-The-Bot's-Required-Permissions">
+              this page
+            </a>
+            for help configuring the required bot permissions.
+          </p>
+        </div>
+      </section>
       <section className="commands">
         <div className="commands__wrapper">
           <h1 className="commands__title">Commands</h1>
