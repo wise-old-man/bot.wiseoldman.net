@@ -11,8 +11,8 @@ interface AlternativeOption {
 export interface CommandConfig {
   title: string;
   baseCommand: string;
-  examples: string[];
   requiresAdmin?: boolean;
+  examples?: string[];
   options?: CommandOption[];
   alternatives?: AlternativeOption[];
 }
